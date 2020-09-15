@@ -1,0 +1,14 @@
+#!/usr/bin/env groovy
+
+pipeline {
+  agent any
+  options {
+    disableConcurrentBuilds()
+    timestamps()
+   }
+   stages {
+     stage('Stage 1') {
+       sh 'echo 'Running Stage 1'
+     }
+   }
+}
