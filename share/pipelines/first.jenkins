@@ -14,9 +14,12 @@ pipeline {
          sh 'df -h'
          sh 'env'
          sh 'echo $PATH'
-         sh 'find /'
          sh 'whoami'
          sh 'ifconfig -a'
+         sh 'apt list'
+         sh 'dpkg list'
+         sh 'aws --version'
+         sh 'python --version'
        }
      }
    }
