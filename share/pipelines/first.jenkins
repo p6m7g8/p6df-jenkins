@@ -10,16 +10,7 @@ pipeline {
    stages {
      stage('Stage 1') {
        steps {
-         sh 'uname -a'
-         sh 'df -h'
-         sh 'env'
-         sh 'echo $PATH'
-         sh 'whoami'
-         sh 'ifconfig -a'
-         sh 'apt list'
-         sh 'dpkg list'
-         sh 'aws --version'
-         sh 'python --version'
+         sh 'apt list ; dpkg list ; aws --version ; python --version'
        }
      }
    }
