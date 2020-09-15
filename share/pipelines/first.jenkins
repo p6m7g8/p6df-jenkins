@@ -10,7 +10,13 @@ pipeline {
    stages {
      stage('Stage 1') {
        steps {
-         sh 'echo Running Stage 1'
+         sh 'uname -a'
+         sh 'df -h'
+         sh 'env'
+         sh 'echo $PATH'
+         sh 'find /'
+         sh 'whoami'
+         sh 'ifconfig -a'
        }
      }
    }
