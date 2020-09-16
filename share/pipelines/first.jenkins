@@ -1,17 +1,16 @@
-#!/usr/bin/env groovy
-
-pipeline {
-  agent any
-
-  options {
-    disableConcurrentBuilds()
-   }
-
-   stages {
-     stage('Stage 1') {
-       steps {
-         sh 'apt list ; dpkg list ; aws --version ; python --version'
-       }
-     }
-   }
+pipelineJob('smile-avm-account-create') {
+	displayName('Smile AVM Account Create')
+	definition {
+		cpsScm {
+			scm {
+				git {
+					remote {
+						url('https://github.com/p6m7g8/p6df-jenkins.git')
+					}
+					branches('*/master')
+				}
+			}
+			scriptPath('pipelines/smile-avm-account-create.jenkins')
+		}
+	}
 }
