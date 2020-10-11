@@ -14,7 +14,12 @@ p6df::modules::jenkins::version() { echo "0.0.1" }
 #
 #>
 ######################################################################
-p6df::modules::jenkins::deps() { ModuleDeps=(p6m7g8/p6jenkins) }
+p6df::modules::jenkins::deps() {
+    ModuleDeps=(
+        p6m7g8/p6df-java
+        p6m7g8/p6jenkins
+    )
+}
 
 ######################################################################
 #<
@@ -48,11 +53,11 @@ p6df::modules::jenkins::init() {
 ######################################################################
 #<
 #
-# Function: p6df::prompt::jenkins::line()
+# Function: p6df::modules::jenkins::prompt::line()
 #
 #>
 ######################################################################
-p6df::prompt::jenkins::line() {
+p6df::modules::jenkins::prompt::line() {
 
     p6_jenkins_prompt_info
 }
