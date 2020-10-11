@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/p6m7g8/p6df-jenkins/compare/v1.0.1...v2.0.0) (2020-10-11)
+
+
+### Bug Fixes
+
+* **deps:** fix depends ([#16](https://github.com/p6m7g8/p6df-jenkins/issues/16)) ([f4457dc](https://github.com/p6m7g8/p6df-jenkins/commit/f4457dcdf3eac7dad5c6431db4653117d95d35fb))
+
 ### [1.0.1](https://github.com/p6m7g8/p6df-jenkins/compare/v1.0.0...v1.0.1) (2020-09-20)
 
 
