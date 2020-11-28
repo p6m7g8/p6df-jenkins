@@ -1,4 +1,3 @@
-
 ######################################################################
 #<
 #
@@ -65,4 +64,16 @@ p6df::modules::jenkins::cli::get() {
 
     mkdir -p $P6_DFZ_SRC_DIR/p6m7g8/p6df-jenkins/libexec/
     curl -o $P6_DFZ_SRC_DIR/p6m7g8/p6df-jenkins/libexec/jenkins-cli.jar http://$JENKINS_HOST/jnlpJars/jenkins-cli.jar
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::jenkins::local::password()
+#
+#>
+######################################################################
+p6df::modules::jenkins::local::password() {
+
+    p6_file_display "$HOME/.jenkins/secrets/initialAdminPassword"
 }
