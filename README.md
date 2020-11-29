@@ -41,9 +41,11 @@ TAG LINE
 
 - p6df::modules::jenkins::cli::get()
 - p6df::modules::jenkins::deps()
+- p6df::modules::jenkins::forward()
 - p6df::modules::jenkins::init()
 - p6df::modules::jenkins::langs()
 - p6df::modules::jenkins::local::password()
+- p6df::modules::jenkins::on()
 - p6df::modules::jenkins::prompt::line()
 
 
