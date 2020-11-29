@@ -77,3 +77,29 @@ p6df::modules::jenkins::local::password() {
 
     p6_file_display "$HOME/.jenkins/secrets/initialAdminPassword"
 }
+
+######################################################################
+#<
+#
+# Function: p6df::modules::jenkins::forward()
+#
+#>
+######################################################################
+p6df::modules::jenkins::forward() {
+
+  kubectl port-forward statefulset.apps/jenkins 8080:8080 &
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::jenkins::on()
+#
+#>
+######################################################################
+p6df::modules::jenkins::on() {
+
+  export JENKINS_HOST=localhost:8080
+  export JENKINS_URL=http://$JENKINS_HOST
+  export JENKINS_USER_ID=admin
+}
