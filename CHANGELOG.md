@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/p6m7g8/p6df-jenkins/compare/v2.0.0...v2.1.0) (2020-12-06)
+
+
+### Features
+
+* **api:** +`p6df::modules::jenkins::forward()`, +`p6df::modules::jenkins::on()` ([#23](https://github.com/p6m7g8/p6df-jenkins/issues/23)) ([28d211c](https://github.com/p6m7g8/p6df-jenkins/commit/28d211cec3f8f0eeb2e4921e5789ba0e762be085))
+* **api:** +`p6df::modules::jenkins::local::password()` ([#22](https://github.com/p6m7g8/p6df-jenkins/issues/22)) ([cbc4273](https://github.com/p6m7g8/p6df-jenkins/commit/cbc42734f2864f27e7be382c490e17b9de78e84e))
+* **api:** centralize ::version() ([f43bad1](https://github.com/p6m7g8/p6df-jenkins/commit/f43bad1e41e8d7dc926970b07ab64d4d609d5463))
+* **community:** adds CODE_OF_CONDUCT ([3c0b8e2](https://github.com/p6m7g8/p6df-jenkins/commit/3c0b8e2d3545cf60d8d41cad318ff6e5fe31c548))
+* **github:** adds ISSUE_TEMPLATEs ([07fa5cd](https://github.com/p6m7g8/p6df-jenkins/commit/07fa5cdc491c93c3f917fce9009258d3716ee890))
+
+
+* **community:** rely on the .github/ in the org ([#24](https://github.com/p6m7g8/p6df-jenkins/issues/24)) ([b85b8b9](https://github.com/p6m7g8/p6df-jenkins/commit/b85b8b99f801eaf58c7f3eea7924fdb8c416fbf2))
+* **README:** fixes module expansion, adds CodeCov and Synk badges ([#25](https://github.com/p6m7g8/p6df-jenkins/issues/25)) ([da4f099](https://github.com/p6m7g8/p6df-jenkins/commit/da4f099e41324d19bac71f53f65dfa357a200947))
+* **semantic:** no longer needed, defaults are fine ([82a2320](https://github.com/p6m7g8/p6df-jenkins/commit/82a23200342e72eeb627cf0ab25dfc860fdf3601))
+
 ## [2.0.0](https://github.com/p6m7g8/p6df-jenkins/compare/v1.0.1...v2.0.0) (2020-10-11)
 
 
