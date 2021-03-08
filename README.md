@@ -38,9 +38,11 @@
 
 - [Change Log](CHANGELOG.md)
 
-### Usage
+## Usage
 
-#### init.zsh:
+### p6df-jenkins:
+
+#### p6df-jenkins/init.zsh:
 
 - p6df::modules::jenkins::cli::get()
 - p6df::modules::jenkins::deps()
