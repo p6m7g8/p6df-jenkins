@@ -15,6 +15,19 @@ p6df::modules::jenkins::deps() {
 ######################################################################
 #<
 #
+# Function: p6df::modules::jenkins::vscodes()
+#
+#>
+######################################################################
+p6df::modules::jenkins::vscodes() {
+
+    # jenkins
+    code --install-extension jmMeessen.jenkins-declarative-support
+}
+
+######################################################################
+#<
+#
 # Function: p6df::modules::jenkins::langs()
 #
 #>
@@ -29,6 +42,7 @@ p6df::modules::jenkins::langs() {
 #
 # Function: p6df::modules::jenkins::init()
 #
+#  Environment:	 JENKINS_HOST
 #>
 ######################################################################
 p6df::modules::jenkins::init() {
@@ -58,6 +72,7 @@ p6df::modules::jenkins::prompt::line() {
 #
 # Function: p6df::modules::jenkins::cli::get()
 #
+#  Environment:	 P6_DFZ_SRC_DIR
 #>
 ######################################################################
 p6df::modules::jenkins::cli::get() {
@@ -71,6 +86,8 @@ p6df::modules::jenkins::cli::get() {
 #
 # Function: p6df::modules::jenkins::local::password()
 #
+#  Depends:	 p6_file
+#  Environment:	 HOME
 #>
 ######################################################################
 p6df::modules::jenkins::local::password() {
@@ -87,7 +104,7 @@ p6df::modules::jenkins::local::password() {
 ######################################################################
 p6df::modules::jenkins::forward() {
 
-  kubectl port-forward statefulset.apps/jenkins 8080:8080 &
+    kubectl port-forward statefulset.apps/jenkins 8080:8080 &
 }
 
 ######################################################################
@@ -95,11 +112,12 @@ p6df::modules::jenkins::forward() {
 #
 # Function: p6df::modules::jenkins::on()
 #
+#  Environment:	 JENKINS_HOST JENKINS_URL JENKINS_USER_ID
 #>
 ######################################################################
 p6df::modules::jenkins::on() {
 
-  export JENKINS_HOST=localhost:8080
-  export JENKINS_URL=http://$JENKINS_HOST
-  export JENKINS_USER_ID=admin
+    export JENKINS_HOST=localhost:8080
+    export JENKINS_URL=http://$JENKINS_HOST
+    export JENKINS_USER_ID=admin
 }
