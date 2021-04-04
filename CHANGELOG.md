@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/p6m7g8/p6df-jenkins/compare/v2.1.0...v2.1.1) (2021-04-04)
+
+
+* **link:** remove rendundant symlinks; echo for now ([#27](https://github.com/p6m7g8/p6df-jenkins/issues/27)) ([9304bce](https://github.com/p6m7g8/p6df-jenkins/commit/9304bce51a893f45bec851a1d8d5e7c4a66ded6a))
+* **README:** updates generator ([#26](https://github.com/p6m7g8/p6df-jenkins/issues/26)) ([69951d8](https://github.com/p6m7g8/p6df-jenkins/commit/69951d83fdf60216be6b01978583eb922d07c1b1))
+* **vscode:** splits vscode extensions to their languages ([#28](https://github.com/p6m7g8/p6df-jenkins/issues/28)) ([b614d35](https://github.com/p6m7g8/p6df-jenkins/commit/b614d3547c02ae9ad12ffcf0898c4babd142c0e6))
+* Coc -> .github ([574a72f](https://github.com/p6m7g8/p6df-jenkins/commit/574a72f9d941df36787837b54f275015f6285cd8))
+
 ## [2.1.0](https://github.com/p6m7g8/p6df-jenkins/compare/v2.0.0...v2.1.0) (2020-12-06)
 
 
